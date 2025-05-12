@@ -2,12 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Quote Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project quote calculator</title>
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <link rel="stylesheet" href="assets/style/calcualtor.css" />
+  <script src="services/calculator.js" defer></script>
+  <script src="services/global.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+
+<button id="modeToggle" aria-label="Toggle dark mode">
+  <span id="modeIcon">🌙</span>
+</button>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Tamar Tayar</div>
+
+    <button class="menu-toggle" id="menu-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="project-calculator.html" class="active">Project Calculator</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="calculator-container">
+    <h2>Project quote calculator</h2>
+    <p>Fill in the details below and find out how much your project will cost:</p>
+
+    <label for="siteType">Site type:</label>
+    <select id="siteType">
+      <option value="business">Business Site (1000 ₪)</option>
+      <option value="store">Online Store (2000 ₪)</option>
+      <option value="blog">Blog (1500 ₪)</option>
+    </select>
+
+    <label for="pageCount">Number of pages (1–10, extra pages above 1 +200₪):</label>
+    <input type="number" id="pageCount" min="1" max="10" value="1" />
+
+    <label class="checkbox-label">
+      <input type="checkbox" id="customDesign" />
+      <span>I want a personalized design. (+1000 ₪)</span>
+    </label>       
+
+    <div class="buttons">
+      <button onclick="resetForm()">Reset</button>
+      <button onclick="calculatePrice()">Calculate Price</button>
+    </div>
+
+    <div id="priceResult" class="price-result"></div>
+
+    <img src="assets/imgs/baguette.png" alt="baguette image" class="baguette-image" />
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 <strong>Tamar Tayar</strong>. All rights reserved.</p>
+</footer>
+
+
 </body>
 </html>
