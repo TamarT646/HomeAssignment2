@@ -130,7 +130,7 @@ select:focus, input:focus {
   transform: rotate(-5deg) scale(1.1);
 }
 
-@media (max-width: 50px) {
+@media (max-width: 768px) {
   .calculator-container {
     padding: 30px 20px;
   }
