@@ -3,11 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/style/global.css" />
+  <script src="services/global.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">Tamar Tayar</div>
+    <button class="menu-toggle" id="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="project-calculator.html">Project Calculator</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="assets/imgs/me1.jpg" alt="its me" class="hero-image" />
+  <h2><strong>Tamar Tayar</strong></h2>
+  <p>Government Office Employee.</p>
+  <a href="assets/resume.pdf" target="_blank" class="cta-button">Download Resume</a>
+</section>
+
+<section class="call-to-action">
+  <div class="cta-column contacts">
+    <h3>Contact Me</h3>
+    <ul>
+      <li><a href="tel:+972543988758"><i class="fas fa-phone"></i> +972-54-3988758</a></li>
+      <li><a href="mailto:tamar3224@gmail.com"><i class="fas fa-envelope"></i> tamar3224@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/tamartayar" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </div>
+
+  <div class="cta-column project">
+    <h3>Baguette</h3>
+    <p>This page explores the baguette’s history, ingredients, preparation method, and delicious everyday uses.</p>
+    <a href="https://tamart646.github.io/project/baguette.HTML" target="_blank" class="cta-button">View Project</a>
+    <img src="assets/imgs/baguette.png" alt="Baguette Image" class="baguette-image">
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Tamar Tayar. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,25 @@
+  .skills-container {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
+    }
+    
+    .section {
+    background-color: #b3b873;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .section strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    }
+    
+    .section ul {
+    padding-left: 20px;
+    line-height: 1.6;
+    }
+    
