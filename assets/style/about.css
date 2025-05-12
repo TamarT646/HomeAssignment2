@@ -51,4 +51,14 @@
   body.mode-dark .about-img {
     box-shadow: 0 0 5px rgba(255,255,255,0.1);
   }
-  
+  @media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img {
+    margin-bottom: 10px;
+  }
+}
