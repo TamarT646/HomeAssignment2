@@ -1,4 +1,35 @@
-/* variables.css */
 :root {
-  --primary-color: #ffffff;
+  --color-bg: #f5f5f5;
+  --color-text: #333;
+  --color-text-light: #ffffff;
+  --color-header-footer: #758359;
+  --color-hover-bg: rgba(255, 255, 255, 0.2);
+  --color-hover-text: #7d9b7a;
+  --color-active-bg: #e8e784;
+  --color-active-text: #121111;
+  --color-mobile-nav-bg: #567558;
+  --color-bg-dark: #1e1e1e;
+  --color-text-dark: #f0f0f0;
+  --color-header-footer-dark: #354636;
+  --color-card-dark: #44443f;
+  --color-link-dark: #a2bcac;
+  --bg-hero: #e9efcb;
+  --cta-bg: #f0f4e8;
+  --cta-col-bg: #ffffff;
+  --cta-button-bg: #565d3b;
+  --cta-button-hover: #094209;
+  --cta-link-color: #282a3d;
+  --cta-link-hover: #479283;
+  --text-color: #333;
+  --dark-bg: #7d7070;
+  --dark-text: #f0f0f0;
+  --dark-hero-bg: #707e70;
+  --dark-cta-button-bg: #8fb396;
+  --dark-cta-button-hover: #67a183;
+  --dark-cta-bg: #2e2e2e;
+  --dark-cta-col-bg: #564f4f;
+  --dark-link-color: #d6f8e3;
+  --dark-link-hover: #91e6c3;
+  --dark-footer-bg: #354636;
+  --dark-footer-color: #aaa;
 }
