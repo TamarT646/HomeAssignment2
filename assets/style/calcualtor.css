@@ -130,21 +130,6 @@ select:focus, input:focus {
   transform: rotate(-5deg) scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .calculator-container {
-    padding: 30px 20px;
-  }
-
-  .buttons button {
-    margin: 10px 0;
-    width: 100%;
-  }
-
-  .baguette-image {
-    margin-top: 20px;
-  }
-}
-
 .checkbox-label {
   display: flex;
   align-items: center;
@@ -205,4 +190,61 @@ body.mode-dark footer {
   color: #f3feec;
 }
 
+select#pageCount {
+  appearance: none;
+}
 
+@media (max-width: 767px) {
+  .calculator-container {
+    padding: 30px 20px;
+  }
+
+  .buttons button {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .baguette-image {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calculator-container {
+    padding: 40px;
+  }
+
+  .buttons button {
+    padding: 14px 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .calculator-container {
+    max-width: 600px;
+    padding: 50px;
+  }
+
+  .calculator-container h2 {
+    font-size: 2rem;
+  }
+
+  .price-result {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calculator-container {
+    max-width: 700px;
+    padding: 60px;
+  }
+
+  .calculator-container p {
+    font-size: 1.1rem;
+  }
+
+  .buttons button {
+    font-size: 1.1rem;
+  }
+}

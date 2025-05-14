@@ -3,61 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <title>Skills and Work Experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/style/global.css" />
   <link rel="stylesheet" href="assets/style/skills.css" />
   <link rel="stylesheet" href="assets/style/variables.css">
-  <script src="services/global.js" defer></script>
+  <script src="services/global.js" defer></script> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-    <button id="modeToggle" aria-label="Toggle dark mode">
-        <span id="modeIcon">🌙</span>
+  <button id="modeToggle" aria-label="Toggle dark mode">
+    <span id="modeIcon">🌙</span>
+  </button>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Tamar Tayar</div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </button>
 
-<header>
-  <nav class="navbar">
-    <div class="logo">Tamar Tayar</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="project-calculator.html">Project Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <button class="menu-toggle" id="menu-toggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+  <main class="skills-container">
+    <div class="section">
+      <strong>Technical Skills and Relevant Experience:</strong>
+      <ul>
+        <li>Certified First Aid training completed through Magen David Adom (MDA).</li>
+        <li>Volunteered for approximately three years as a First Aid Responder with Magen David Adom.</li>
+        <li>Completed a 100-hour course in Digital Marketing and Website Building.</li>
+        <li>Completed an introductory course in C# (OOP).</li>
+        <li>Completed a course in Database Systems (SQL, ERD).</li>
+      </ul>
+    </div>
 
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="project-calculator.html">Project Calculator</a></li>
-    </ul>
-  </nav>
-</header>
+    <div class="section">
+      <strong>Work Experience:</strong>
+      <ul>
+        <li>Administrative assistant in a large government office.</li>
+        <li>Babysitter for multiple families over several years.</li>
+      </ul>
+    </div>
+  </main>
 
-<main class="skills-container">
-  <div class="section">
-    <strong>Technical Skills and Relevant Experience:</strong>
-    <ul>
-      <li>Certified First Aid training completed through Magen David Adom (MDA).</li>
-      <li>Volunteered for approximately three years as a First Aid Responder with Magen David Adom, providing emergency medical assistance in the field.</li>
-      <li>Completed a 100-hour course in Digital Marketing and Website Building, including hands-on experience with web platforms and marketing tools.</li>
-      <li>Completed an introductory course in C#, including object-oriented programming principles.</li>
-      <li>Completed a course in Database Systems, covering SQL, data modeling, and relational database management.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <strong>Work Experience:</strong>
-    <ul>
-      <li>Administrative assistant in a large government office, working under pressure in a fast-paced environment. Responsible for managing schedules, coordinating tasks, and handling sensitive information with discretion and professionalism.</li>
-      <li>Babysitter for multiple families over several years, responsible for the care of children of various ages. Developed strong interpersonal, time management, and problem-solving skills.</li>
-    </ul>
-  </div>
-</main>
-
-<footer>
+  <footer>
     <p>&copy; 2025 <strong>Tamar Tayar</strong>. All rights reserved.</p>
-</footer>  
+  </footer>
 
 </body>
 </html>

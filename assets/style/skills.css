@@ -34,9 +34,153 @@ body.mode-dark {
 
 body.mode-dark .section {
   background-color: #646d63;
-  box-shadow: 0 2px 10px rgba(255,255,255,0.05);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
 body.mode-dark .section strong {
   color: #f3eed6;
+}
+
+#modeToggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+@media (max-width: 767px) {
+  .skills-container {
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 15px;
+    background-color: #cace95;  /* שמרתי את הצבע כמו קודם */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .section strong {
+    font-size: 1.1em;
+  }
+
+  .section ul {
+    padding-left: 10px;
+    font-size: 0.9em;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-mobile-nav-bg);
+    padding: 10px 20px;
+    overflow-y: auto;
+    z-index: 999;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    z-index: 1050;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-container {
+    padding: 0 20px;
+  }
+
+  .section {
+    background-color: #cace95;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .section strong {
+    font-size: 1.2em;
+  }
+
+  .section ul {
+    padding-left: 20px;
+    font-size: 1em;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-container {
+    max-width: 1000px;
+  }
+
+  .section {
+    padding: 25px;
+    background-color: #cace95;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .section strong {
+    font-size: 1.3em;
+  }
+
+  .section ul {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skills-container {
+    max-width: 1200px;
+  }
+
+  .section {
+    padding: 30px;
+    background-color: #cace95;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .section strong {
+    font-size: 1.5em;
+  }
+
+  .section ul {
+    font-size: 1.2em;
+  }
 }

@@ -108,7 +108,7 @@ header {
   }
 
   .nav-links {
-    display: none;
+    display: none; 
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -141,6 +141,7 @@ header {
 
   .nav-links li {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .menu-toggle {
